@@ -1,0 +1,37 @@
+*{-webkit-box-sizing: border-box;box-sizing: border-box;}
+body{-webkit-perspective: 600px;perspective: 600px}
+.father{
+	width: 400px;
+	margin: 100px auto;
+	border: 1px solid #ccc;
+	height: 200px;
+	position: relative;
+	text-align: center;color: white;
+	line-height: 200px;-webkit-transition: all 1s ease-in-out;-o-transition: all 1s ease-in-out;transition: all 1s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+
+}
+.father:hover{-webkit-transform: rotatey(180deg);-ms-transform: rotatey(180deg);transform: rotatey(180deg);background-color: burlywood}
+.face{	
+	z-index: 2;
+	width: 400px;
+	background-color:red;
+	height: 200px;
+	position: absolute;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	transform: rotateY(0deg)
+
+}
+.back{	
+	z-index: 1;
+	width: 400px;
+	background-color:rgb(47, 255, 168);
+	height: 200px;
+	position: absolute;
+	-webkit-transform: rotatey(180deg);
+	    -ms-transform: rotatey(180deg);
+	        transform: rotatey(180deg);
+}
+.img{background-image:url(earth-day.jpg) ;background-size: cover; }
